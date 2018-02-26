@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>私信</title>
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link href="fonts/iconfont.css" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="js/echarts.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$(".time-bar a").click(function () {
+				var obj = $(this).parent().parent().nextAll();
+				var index = $(this).index();
+				$(this).addClass('active').siblings().removeClass('active');
+				$(".tab-con").hide();
+				$(".tab-con").eq(index).show();
+
+			});
+		})
+	</script>
+</head>
+
+<body>
+	<div class="wechat">
+
+
+		<div class="time-header">
+			<a href="person-page.html">
+				<span class="img-tx11">
+					<img src="img/IMG_3804.JPG" alt="" />
+				</span>
+			</a>
+			<div class="time-bar">
+				<a href="javascript:void()" class="active">
+					<span class="time-zx">个人</span>
+				</a>
+				<a href="javascript:void()">
+					<span class="time-qx">订阅</span>
+				</a>
+			</div>
+		</div>
+		<div class="tab-con">
+			<div id="main" class="time-box"></div>
+			<div class="time-excel-box">
+				<div class="time-excel">
+					<span>
+						<font>653</font>
+						<i class="iconfont icon-like"></i>
+					</span>
+					<span class="time-excel-bd">
+						<font>34</font>
+						<i class="iconfont icon-message"></i>
+					</span>
+
+					<span>
+						<font>234</font>
+						<i class="iconfont icon-exit"></i>
+					</span>
+				</div>
+			</div>
+			<div class="hdt">
+				<div class="hdt-add">消息列表</div>
+				<ul>
+					<li>
+						<div class="container">
+							<div class="hdt-box">
+								<div class="hdt-dw">
+									<span>
+										<i></i>
+									</span>
+								</div>
+								<div class="hdt-text">
+									<ul>
+										<li>
+											<h4>
+												<span class="img-tx14">
+													<img src="img/IMG_3805.JPG" alt="" />
+												</span>&nbsp;甘蔗</h4>
+											<p>2017/08/28 09:12:21
+												<br />评论了你的微博:我们一起继续加油!怀挺!</p>
+											<a href="comment.html">
+												<i class="iconfont icon-right"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="container">
+							<div class="hdt-box">
+								<div class="hdt-dw">
+									<span>
+										<i></i>
+									</span>
+								</div>
+								<div class="hdt-text">
+									<ul>
+										<li>
+											<h4>
+												<span class="img-tx14">
+													<img src="img/IMG_3805.JPG" alt="" />
+												</span>&nbsp;甘蔗</h4>
+											<p>2017/08/28 09:12:01
+												<br />赞了你的微博</p>
+											<a href="comment.html">
+												<i class="iconfont icon-right"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="container">
+							<div class="hdt-box">
+								<div class="hdt-dw">
+									<span>
+										<i></i>
+									</span>
+								</div>
+								<div class="hdt-text">
+									<ul>
+										<li>
+											<h4>
+												<span class="img-tx14">
+													<img src="img/IMG_3724.JPG" alt="" />
+												</span>&nbsp;Aya_s</h4>
+
+											<p>2017/08/28 08:32:34
+												<br />转发了你的微博</p>
+											<a href="comment.html">
+												<i class="iconfont icon-right"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="container">
+							<div class="hdt-box">
+								<div class="hdt-dw">
+									<span>
+										<i></i>
+									</span>
+								</div>
+								<div class="hdt-text">
+									<ul>
+										<li>
+											<h4>
+												<span class="img-tx14">
+													<img src="img/IMG_3724.JPG" alt="" />
+												</span>&nbsp;Aya_s</h4>
+											<p>2017/08/28 08:31:54
+												<br />赞了你的微博</p>
+											<a href="comment.html">
+												<i class="iconfont icon-right"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="container">
+							<div class="hdt-box">
+								<div class="hdt-dw">
+									<span>
+										<i></i>
+									</span>
+								</div>
+								<div class="hdt-text">
+									<ul>
+										<li>
+											<h4>
+												<span class="img-tx14">
+													<img src="img/IMG_3724.JPG" alt="" />
+												</span>&nbsp;Aya_s</h4>
+											<p>2017/08/28 08:30:55
+												<br />评论了你的微博:(⊙o⊙)嗯!</p>
+											<a href="comment.html">
+												<i class="iconfont icon-right"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="container">
+							<div class="hdt-box">
+								<div class="hdt-dw">
+									<span>
+										<i></i>
+									</span>
+								</div>
+								<div class="hdt-text">
+									<ul>
+										<li>
+
+											<h4>
+												<span class="img-tx14">
+													<img src="img/IMG_3395.JPG" alt="" />
+												</span>&nbsp;小叹</h4>
+											<p>2017/08/27 14:32:35
+												<br />评论了你的微博:这个画风大爱啊!</p>
+											<a href="comment.html">
+												<i class="iconfont icon-right"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="container">
+							<div class="hdt-box">
+								<div class="hdt-dw">
+									<span>
+										<i></i>
+									</span>
+								</div>
+								<div class="hdt-text">
+									<ul>
+										<li>
+											<h4>
+												<span class="img-tx14">
+													<img src="img/IMG_3395.JPG" alt="" />
+												</span>&nbsp;小叹</h4>
+											<p>2017/08/27 14:31:55
+												<br />赞了你的微博</p>
+											<a href="comment.html">
+												<i class="iconfont icon-right"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="tab-con" style="display: none;">
+		<div class="wechat-body">
+			<ul>
+				<li>
+					<a href="chatUI6.html">
+						<div class="wechat-set-body">
+							<div class="img-tx10">
+								<img src="img/201681816375.png" alt="" />
+							</div>
+							<div class="wechat-set-body-text">
+								<p>
+									<span>
+										<strong>今日头条</strong>
+									</span>
+									双十一迎来新一波的购物高峰！谁将成为最大赢家！
+								</p>
+							</div>
+
+						</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="chatUI7.html">
+						<div class="wechat-set-body">
+							<div class="img-tx10">
+								<img src="img/1452466134736256.jpg" alt="" />
+							</div>
+							<div class="wechat-set-body-text">
+								<p>
+									<span>
+										<strong>菜鸟裹裹</strong>
+									</span>
+									您的顺丰快递已经到达！快来领取！
+								</p>
+							</div>
+
+						</div>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="chatUI8.html">
+						<div class="wechat-set-body">
+							<div class="img-tx10">
+								<img src="img/c453622f365c4732a4bd59edc2817ba7.jpg" alt="" />
+							</div>
+							<div class="wechat-set-body-text">
+								<p>
+									<span>
+										<strong>Tapole眼镜店</strong>
+									</span>
+
+									双十一配镜立减200元！
+								</p>
+							</div>
+
+						</div>
+					</a>
+				</li>
+
+
+
+
+			</ul>
+
+		</div>
+
+	</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="footer">
+		<a href="wechat.html">
+			<i class="fa fa-comments fa-2x "></i>
+		</a>
+		<a href="index.html">
+			<i class="fa fa-globe fa-2x "></i>
+		</a>
+		<a href="time.html">
+			<i class="fa  fa-inbox fa-2x "></i>
+		</a>
+		<a href="person-main.html">
+			<i class="fa fa-user fa-2x "></i>
+		</a>
+	</div>
+
+	<script type="text/javascript">
+		var myChart = echarts.init(document.getElementById('main'));
+
+
+
+		option = {
+
+
+			tooltip: {
+				trigger: 'axis'
+			},
+			legend: {
+				data: ['我的粉丝', '浏览数']
+			},
+			toolbox: {
+				show: true,
+				feature: {
+
+					magicType: { type: ['line', 'bar'] },
+
+				}
+			},
+			grid: {
+				top: '18%',
+				left: '0%',
+				right: 50,
+				bottom: '10%',
+				containLabel: true
+			},
+
+
+
+
+
+			xAxis: {
+				type: 'category',
+				boundaryGap: false,
+				data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+				axisLabel: { interval: 0 }
+			},
+			yAxis: {
+				type: 'value'
+
+			},
+			series: [
+				{
+					name: '我的粉丝',
+					type: 'line',
+					data: [1868, 1901, 2284, 3010, 3904, 4130, 6610],
+					markPoint: {
+						data: [
+							{ type: 'max', name: '最大值' },
+							{ type: 'min', name: '最小值' }
+						]
+					},
+					markLine: {
+						data: [
+							{ type: 'average', name: '平均值' }
+						]
+					}
+				},
+				{
+					name: '浏览数',
+					type: 'line',
+					data: [1009, 1200, 1800, 1600, 1850, 2700, 4090],
+					markPoint: {
+						data: [
+							{ type: 'max', name: '最大值' },
+							{ type: 'min', name: '最小值' }
+						]
+					},
+					markLine: {
+						data: [
+							{ type: 'average', name: '平均值' },
+
+						]
+					}
+				}
+			]
+		};
+		myChart.setOption(option);
+		window.onresize = myChart.resize;
+	</script>
+</body>
+
+</html>

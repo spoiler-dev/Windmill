@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>私信</title>
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link href="fonts/iconfont.css" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+	<link href="demo1.css" rel="stylesheet" />
+	<link href="dist/switchery.min.css" rel="stylesheet" />
+	<script src="fonts/iconfont.js"></script>
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script type="text/javascript">
+		var myScroll;
+
+		function loaded() {
+			myScroll = new IScroll('#wrapper', {
+				mouseWheel: true
+			});
+		}
+		document.addEventListener('touchmove', function (e) {
+			e.preventDefault();
+		}, false);
+		$(function () {
+			$(".icon-shengji").click(function () {
+				$("#layer-up").show();
+			});
+			$(".quan-off3").click(function () {
+				$("#layer_quan3").show();
+			});
+
+
+			$(".close_r").click(function () {
+				$(".layer_box").hide();
+			});
+
+		});
+	</script>
+
+</head>
+
+<body class="chat-bd">
+
+
+
+	<div class="chat-set-header">
+		<a href="chatUI2.html">
+			<i class="iconfont icon-back icon-topt"></i>
+		</a>
+		<strong>聊天设置</strong>
+	</div>
+
+	<div class="chat-set-body">
+		<span class="img-tx100">
+			<img src="img/IMG_3395.JPG" alt="" />
+		</span>
+		<div class="chat-set-body-text">
+			<strong>DR</strong>&nbsp;
+			<i class="iconfont icon-creditlevel"></i>
+			<p>简介：文字编辑&nbsp;ID:479345265</p>
+		</div>
+
+		<a href="person-info2.html">
+			<i class="iconfont icon-more1 more"></i>
+		</a>
+	</div>
+
+	<div class="chat-set-content">
+		<div class="chat-set-content1">
+			<strong>屏蔽消息</strong>
+			<input type="checkbox" class="js-switch" />
+		</div>
+		<div class="chat-set-content2">
+			<strong>加入黑名单</strong>
+			<input type="checkbox" class="js-switch" />
+		</div>
+	</div>
+
+	<div class="chat-set-footer quan-off3">
+		分享
+	</div>
+	<div class="chat-set-footer">
+		清空聊天记录
+	</div>
+	<div class="chat-set-footer">
+		删除好友
+	</div>
+
+	<div id="layer_quan3" class="layer_box">
+
+		<div class="set-box lay_quan3">
+			<div class="set-header">
+				<div class="set-header-top">您已经关注@DR</div>
+				<div class="set-header-body">设置备注</div>
+				<div class="set-header-body">设置分组</div>
+			</div>
+			<div class="set-share">
+				<div class="set-share-top">分享</div>
+				<a>
+					<svg class="icon" aria-hidden="true">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xinlang1"></use>
+					</svg>
+				</a>
+				<a>
+					<svg class="icon" aria-hidden="true">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-weichat"></use>
+					</svg>
+				</a>
+				<a>
+					<svg class="icon" aria-hidden="true">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-QQ"></use>
+					</svg>
+				</a>
+				<a>
+					<svg class="icon" aria-hidden="true">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-douban"></use>
+					</svg>
+				</a>
+
+
+			</div>
+			<div class="set-off close_r">
+				<div>取消</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="dist/switchery.min.js"></script>
+	<script type="text/javascript">
+
+		// Default
+		// if-else statement used only for fixing <IE9 issues
+		if (Array.prototype.forEach) {
+			var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+			elems.forEach(function (html) {
+				var switchery = new Switchery(html);
+			});
+		} else {
+			var elems = document.querySelectorAll('.js-switch');
+
+			for (var i = 0; i < elems.length; i++) {
+				var switchery = new Switchery(elems[i]);
+			}
+		}
+
+		// Disabled switch
+		var disabled = document.querySelector('.js-switch-disabled');
+		var switchery = new Switchery(disabled, { disabled: true });
+
+		var disabledOpacity = document.querySelector('.js-switch-disabled-opacity');
+		var switchery = new Switchery(disabledOpacity, { disabled: true, disabledOpacity: 0.75 });
+
+		// Colored switches
+		var blue = document.querySelector('.js-switch-blue');
+		var switchery = new Switchery(blue, { color: '#41b7f1' });
+
+		var pink = document.querySelector('.js-switch-pink');
+		var switchery = new Switchery(pink, { color: '#ff7791' });
+
+		var teal = document.querySelector('.js-switch-teal');
+		var switchery = new Switchery(teal, { color: '#3cc8ad' });
+
+		var red = document.querySelector('.js-switch-red');
+		var switchery = new Switchery(red, { color: '#db5554' });
+
+		var secondary = document.querySelector('.js-switch-secondary');
+		var switchery = new Switchery(secondary, { color: '#fec200', secondaryColor: '#ff8787' });
+
+		// Getting checkbox state
+		// On click
+		var clickCheckbox = document.querySelector('.js-check-click')
+			, clickButton = document.querySelector('.js-check-click-button');
+
+		if (window.addEventListener) {
+			clickButton.addEventListener('click', function () {
+				alert(clickCheckbox.checked);
+			});
+		} else {
+			clickButton.attachEvent('onclick', function () {
+				alert(clickCheckbox.checked);
+			});
+		}
+
+		// On change
+		var changeCheckbox = document.querySelector('.js-check-change')
+			, changeField = document.querySelector('.js-check-change-field');
+
+		changeCheckbox.onchange = function () {
+			changeField.innerHTML = changeCheckbox.checked;
+		};
+
+		// CSS3 Pie for <IE9
+		if (window.PIE) {
+			var wrapper = document.querySelectorAll('.switchery')
+				, handle = document.querySelectorAll('.switchery > small');
+
+			if (wrapper.length == handle.length) {
+				for (var i = 0; i < wrapper.length; i++) {
+					PIE.attach(wrapper[i]);
+					PIE.attach(handle[i]);
+				}
+			}
+		}
+	</script>
+</body>
+
+</html>

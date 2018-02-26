@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>他人主页</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link href="fonts/iconfont.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+	<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/willesPlay.css" />
+
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/willesPlay.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/segment.min.js"></script>
+	<script src="js/ease.min.js"></script>
+	<script src="fonts/iconfont.js"></script>
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script type="text/javascript">
+		var myScroll;
+
+		function loaded() {
+			myScroll = new IScroll('#wrapper', {
+				mouseWheel: true
+			});
+		}
+		document.addEventListener('touchmove', function (e) {
+			e.preventDefault();
+		}, false);
+		$(function () {
+			$(".icon-shengji").click(function () {
+				$("#layer-up").show();
+			});
+			$(".quan-off3").click(function () {
+				$("#layer_quan3").show();
+			});
+
+
+			$(".close_r").click(function () {
+				$(".layer_box").hide();
+			});
+
+		});
+	</script>
+</head>
+
+<body onload="loaded()">
+	<div style="text-align:center;clear:both;">
+		<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+		<script src="/follow.js" type="text/javascript"></script>
+	</div>
+
+	<!-- Team members structure start -->
+	<div class="team-members">
+
+		<a href="index.html">
+			<i class="iconfont icon-back back"></i>
+		</a>
+		<div class="add">
+			<i class="iconfont icon-selected"></i>
+		</div>
+		<!-- effect-3 html -->
+		<div class="single-member effect-3">
+			<div class="member-image">
+				<img src="img/IMG_3724.JPG" alt="" />
+			</div>
+			<div class="member-info">
+				<h3>Aya_s</h3>
+				<i class="iconfont icon-creditlevel"></i>
+				<h5>
+					<strong>在校大学生</strong>
+				</h5>
+				<p>个性签名:</p>
+				<p>阳光晒过的温柔，是你给我的回应</p>
+				<div class="member-fz">
+					<div class="fl">
+						<strong>关注:</strong>
+						<font>&nbsp;630</font>
+					</div>
+					<div class="fr">
+						<strong>粉丝:</strong>
+						<font>&nbsp;62342</font>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- effect-3 html end -->
+
+	</div>
+	<!-- Team members structure start -->
+	<div class="team-body">
+		<p class="team-body-name">Aya_s&nbsp;,&nbsp;22</p>
+		<p class="team-body-location">China,ShHai</p>
+		<p class="team-say">
+			<strong>自说自话</strong>
+		</p>
+		<div class="team-text">
+			只要心在跳动，就有血的潮汐/而你的微笑将印在红色的月亮上/每夜升起在我的小窗前/唤醒记忆
+		</div>
+		<div>
+			<p class="team-fd">
+				<strong>朋友圈</strong>
+			</p>
+			<span class="img-tx4">
+				<img src="img/IMG_3723.JPG" alt="" />
+			</span>
+			<span class="img-tx5">
+				<img src="img/6630394864582890026.jpg" alt="" />
+			</span>
+			<span class="img-tx6">
+				<img src="img/IMG_3395.JPG" alt="" />
+			</span>
+			<span class="img-tx7">
+				<img src="img/IMG_3852.JPG" alt="" />
+			</span>
+			<span class="img-tx8">99+</span>
+		</div>
+	</div>
+	<div class="team-footer">
+		<a href="chatUI3.html">
+			<i class="iconfont icon-attachment fl1"></i>
+		</a>
+		<i class="iconfont icon-set fr1 quan-off3"></i>
+	</div>
+
+	<div id="layer_quan3" class="layer_box">
+
+		<div class="set-box lay_quan3">
+			<div class="set-header">
+				<div class="set-header-top">您已经关注@Aya_s</div>
+				<div class="set-header-body">设置备注</div>
+				<div class="set-header-body">设置分组</div>
+			</div>
+			<div class="set-share">
+				<div class="set-share-top">分享</div>
+				<a>
+					<svg class="icon" aria-hidden="true">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xinlang1"></use>
+					</svg>
+				</a>
+				<a>
+					<svg class="icon" aria-hidden="true">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-weichat"></use>
+					</svg>
+				</a>
+				<a>
+					<svg class="icon" aria-hidden="true">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-QQ"></use>
+					</svg>
+				</a>
+				<a>
+					<svg class="icon" aria-hidden="true">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-douban"></use>
+					</svg>
+				</a>
+
+
+			</div>
+			<div class="set-off close_r">
+				<div>取消</div>
+			</div>
+		</div>
+	</div>
+	<p class="person-active">
+		<strong>全部动态</strong>
+		<i class="iconfont icon-supplierfeatures"></i>
+	</p>
+	<div class="content-box">
+		<ul>
+
+			<li>
+				<div class="person">
+					<div class="person-time">最热&nbsp;12:30&nbsp;&nbsp;来自iphone6s</div>
+					<div class="person-photo">
+						<img src="img/VnpIajh2M2U2ODFROXF3UTlHLzR5OUtZVXlFOUdrNWM2amV0UDlCV0hRM0xUSmlJdVRHdFVnPT0.jpg" />
+						<a href="person-page.html">
+							<span class="img-tx">
+								<img src="img/IMG_3724.JPG" alt="" />
+							</span>
+						</a>
+						<div class="person-text">
+
+							<p>(๑ŐдŐ) 好帅呐！</p>
+							<p>
+								<font>93364</font>人喜欢</p>
+						</div>
+						<button class="zan"></button>
+					</div>
+
+				</div>
+
+			</li>
+
+
+			<li></li>
+		</ul>
+	</div>
+</body>
+
+</html>
